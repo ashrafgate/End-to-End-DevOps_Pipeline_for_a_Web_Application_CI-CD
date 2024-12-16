@@ -2,3 +2,4 @@
 1. How to configure  AWS ECR
 2. How to USE image for container from ECR.
 3. Created Docker file for webApp
+4. How to access ECR image from another account
