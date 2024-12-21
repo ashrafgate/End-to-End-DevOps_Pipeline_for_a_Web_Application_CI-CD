@@ -13,7 +13,7 @@ spec:
         app: web-app
     spec:
       containers:
-      - name: my-web-app
+      - name: web-app
         image: 448049817247.dkr.ecr.us-east-1.amazonaws.com/app/mywebapp
         imagePullPolicy: Always
         ports:
