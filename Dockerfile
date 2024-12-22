@@ -1,3 +1,3 @@
 FROM nginx:latest
-ADD index.html /usr/share/nginx/index.html
+ADD index.html /usr/share/nginx/html/index.html
 EXPOSE 80
