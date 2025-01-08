@@ -7,7 +7,7 @@ pipeline {
         AWS_ACCOUNT_ID = "605134464535"
         IMAGE_REPO_NAME = "app/mywebapp"
         IMAGE_TAG = "latest"
-        REPOSITORY_URI = "605134464535.dkr.ecr.us-east-1.amazonaws.com/app/mywebapp"
+        REPOSITORY_URI = "605134464535.dkr.ecr.ap-south-1.amazonaws.com/app/webapp"
     }
 
     stages {
