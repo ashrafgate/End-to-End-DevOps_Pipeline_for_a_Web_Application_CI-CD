@@ -22,20 +22,6 @@ pipeline {
             }
         }
 
-        stage('Cloning Git') {
-            steps {
-                checkout([$class: 'GitSCM',
-                    branches: [[name: '*/main']],
-                    doGenerateSubmoduleConfigurations: false,
-                    extensions: [],
-                    submoduleCfg: [],
-                    userRemoteConfigs: [[
-                        credentialsId: '',
-                        url: 'https://github.com/ashrafgate/E-to-E-DevOps-Pipeline-WebApp-AK.git'
-                    ]]
-                ])
-            }
-        }
 
         stage('Building image') {
             steps {
@@ -84,9 +70,9 @@ pipeline {
         stage('K8S Deploy') {
             steps {
                 script {
-					dir('kubernetes') {
+		    dir('kubernetes') {
                     	sh "aws eks update-kubeconfig --name eks-cluster --region ap-south-1"
-						sh "cat /var/lib/jenkins/.kube/config"
+			sh "cat /var/lib/jenkins/.kube/config"
                         sh 'kubectl apply -f deployment.yml'
 						
 					}
