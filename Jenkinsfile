@@ -42,20 +42,6 @@ pipeline {
             }
         }
 
-        stage('Creating ECR-Secret') {
-            steps {
-                script {
-                    sh """
-                    kubectl create secret docker-registry ecr-secret \
-                    --docker-server=605134464535.dkr.ecr.ap-south-1.amazonaws.com \
-                    --docker-username=AWS \
-                    --docker-password=\$(aws ecr get-login-password --region ap-south-1) \
-                    --docker-email=your-email@example.com
-                    """
-                }
-            }
-        }
-		
         stage("Create an EKS Cluster") {
             steps {
                 script {
