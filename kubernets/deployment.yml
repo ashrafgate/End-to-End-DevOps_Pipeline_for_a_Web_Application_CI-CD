@@ -13,9 +13,6 @@ spec:
       labels:
         app: web-app
     spec:
-      imagePullSecrets:
-      - name: ecr-secret
-    spec:
       containers:
       - name: web-app
         image: 605134464535.dkr.ecr.ap-south-1.amazonaws.com/app/webapp:latest
