@@ -56,7 +56,7 @@ pipeline {
         stage('K8S Deploy') {
             steps {
                 script {
-		    dir('kubernetes') {
+		    dir('kubernets') {
                     	sh "aws eks update-kubeconfig --name my-cluster --region ap-south-1"
 			sh "cat /var/lib/jenkins/.kube/config"
                         sh 'kubectl apply -f deployment.yml'
