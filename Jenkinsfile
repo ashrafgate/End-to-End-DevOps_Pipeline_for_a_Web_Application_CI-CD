@@ -5,9 +5,9 @@ pipeline {
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
         AWS_DEFAULT_REGION = "ap-south-1"
         AWS_ACCOUNT_ID = "605134464535"
-        IMAGE_REPO_NAME = "app/mywebapp"
+        IMAGE_REPO_NAME = "web/appweb"
         IMAGE_TAG = "latest"
-        REPOSITORY_URI = "605134464535.dkr.ecr.ap-south-1.amazonaws.com/app/webapp"
+        REPOSITORY_URI = "605134464535.dkr.ecr.ap-south-1.amazonaws.com/web/appweb"
     }
 
     stages {
