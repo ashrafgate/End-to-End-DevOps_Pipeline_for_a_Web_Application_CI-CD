@@ -105,7 +105,7 @@ pipeline {
         stage('Checkout SCM') {
             steps {
                 script {
-                    git url: 'https://github.com/Chem2527/jen-Terra-ansi-ecr-eks-prom-graf.git', branch: 'main', credentialsId: 'Git'
+                    git url: 'https://github.com/ashrafgate/End-to-End-DevOps_Pipeline_for_a_Web_Application_CI-CD.git', branch: 'main', credentialsId: 'Git'
                 }
             }
         }
@@ -238,7 +238,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/Chem2527/jen-Terra-ansi-ecr-eks-prom-graf.git', branch: 'main', credentialsId: 'Git'
+                git url: 'https://github.com/ashrafgate/End-to-End-DevOps_Pipeline_for_a_Web_Application_CI-CD.git', branch: 'main', credentialsId: 'Git'
             }
         }
 
@@ -282,7 +282,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/Chem2527/jen-Terra-ansi-ecr-eks-prom-graf.git', branch: 'main', credentialsId: 'Git'
+                git url: 'https://github.com/ashrafgate/End-to-End-DevOps_Pipeline_for_a_Web_Application_CI-CD.git', branch: 'main', credentialsId: 'Git'
             }
         }
 
@@ -436,7 +436,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/Chem2527/jen-Terra-ansi-ecr-eks-prom-graf.git', branch: 'main', credentialsId: 'Git'
+                git url: 'https://github.com/ashrafgate/End-to-End-DevOps_Pipeline_for_a_Web_Application_CI-CD.git', branch: 'main', credentialsId: 'Git'
             }
         }
 
